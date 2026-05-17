@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Credit Karma Funding Application</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="logo">CK</div>
+  <span class="header-title">Credit Karma Funding Application</span>
+</header>
+
+<div class="page">
+
+  <p class="page-title">Funding Application</p>
+  <p class="page-subtitle">Complete all required fields to submit your request.</p>
+
+  <!-- ══ SECTION 1: Personal Info ══ -->
+  <div class="form-section">
+    <div class="section-title">Personal Information</div>
+
+    <div class="grid-2">
+      <div class="field">
+        <div class="field-label">Last Name <span class="badge-req">Required</span></div>
+        <input type="text" placeholder="Last name" data-required="true" data-label="Last Name">
+      </div>
+      <div class="field">
+        <div class="field-label">First Name</div>
+        <input type="text" placeholder="First name">
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="field">
+        <div class="field-label">DOB</div>
+        <input type="date">
+      </div>
+      <div class="field">
+        <div class="field-label">Phone <span class="badge-req">Required</span></div>
+        <input type="tel" inputmode="tel"   placeholder="(000) 000-0000" data-required="true" data-label="Phone" data-type="numeric" data-phone="true">
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="field-label">SS #</div>
+      <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="9" placeholder="XXX-XX-XXXX" data-label="SS #" data-type="numeric" data-ssn="true">
+    </div>
+
+    <div class="field">
+      <div class="field-label">Email Address</div>
+      <input type="email" placeholder="you@example.com">
+    </div>
+  </div>
+
+  <!-- ══ SECTION 2: Bank / Education ══ -->
+  <div class="form-section">
+    <div class="section-title">Bank &amp; Education</div>
+
+    <div class="field">
+      <div class="field-label">Bank Education</div>
+      <div class="sub-group">
+        <div class="sub-row">
+          <span class="sub-label">How Long Have You Been With Your Current Bank?</span>
+          <input class="small-input" type="text" placeholder="Enter response">
+        </div>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="field-label">Banking / Institution <span class="badge-req">Required</span></div>
+      <div class="sub-group">
+        <div class="sub-row">
+          <span class="sub-label">Which Bank Do You Currently Use?</span>
+          <input type="text" placeholder="Enter response" data-required="true" data-label="Banking / Institution - Your Questions">
+        </div>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="field-label">Banking / Institution Loan <span class="badge-req">Required</span></div>
+      <div class="sub-group">
+        <div class="sub-row">
+          <span class="sub-label">How Are You Planning To Use The Funds?</span>
+          <input type="text" placeholder="Enter response" data-required="true" data-label="Banking / Institution Loan - Your Questions">
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- ══ My Life block ══ -->
+  <div class="form-section">
+    <div class="section-title">My Life</div>
+    <div class="highlight-box">
+      "The day my career plans changed was when I first met my mentor — a woman who had built three businesses from nothing. I didn't know it at the time, but that conversation would alter the entire direction of my financial life. I had just turned 27, living paycheck to paycheck, and couldn't see past the month ahead. <strong>Everything changed when I discovered what access to the right funding could do.</strong> It wasn't just money — it was momentum."
+    </div>
+    <div class="text-block">
+      Use this space to share relevant background about your financial history, life circumstances, or any information you believe strengthens your application. This context helps our review team make a fair and informed decision.
+    </div>
+    <div class="field">
+      <textarea rows="4" placeholder="Tell us about yourself..."></textarea>
+    </div>
+  </div>
+
+  <!-- ══ SECTION 3: Credit Report ══ -->
+  <div class="form-section">
+    <div class="section-title">Credit Report</div>
+
+      <div class="field">
+        <div class="field-label">Credit Change In The Past 30 Days<span class="badge-req">Required</span></div>
+        <input type="text" inputmode="numeric" placeholder="Value" data-required="true" data-label="Credit Report - 30 Days" data-type="numeric">
+      </div>
+    
+
+
+    <div class="field">
+      <div class="field-label">Last Loan<span class="badge-req">Required</span></div>
+      <input type="text" placeholder="Most recent loan date / amount" data-required="true" data-label="Loan Last">
+    </div>
+
+    <div class="field">
+      <div class="field-label">Reason <span class="badge-req">Required</span></div>
+      <input type="text" placeholder="Reason for credit inquiry" data-required="true" data-label="Credit Report - Reason">
+    </div>
+
+
+  </div>
+
+  <!-- ══ SECTION 4: Badge Trust Network ══ -->
+  <div class="form-section">
+    <div class="section-title">Badge Trust Network</div>
+
+    <div class="grid-2">
+      <div class="field">
+        <div class="field-label">City <span class="badge-req">Required</span></div>
+        <input type="text" placeholder="City" data-required="true" data-label="Badge Trust Network - City">
+      </div>
+      <div class="field">
+        <div class="field-label">State / Region</div>
+        <input type="text" placeholder="State / Region">
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="field-label">First Name</div>
+      <input type="text" placeholder="First name">
+    </div>
+
+    <div class="field">
+      <div class="field-label">Email <span class="badge-req">Required</span></div>
+      <input type="email" placeholder="you@example.com" data-required="true" data-label="Badge Trust Network - Email">
+    </div>
+
+    <div class="field">
+      <div class="field-label">Direction / Address</div>
+      <input type="text" placeholder="Street address">
+    </div>
+
+    <div class="field">
+      <div class="field-label">Zip Code</div>
+      <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="5" placeholder="Postal code" data-label="Badge Trust Network - Zip Code" data-type="numeric" data-zip="true">
+    </div>
+
+    <div class="field">
+      <div class="field-label">Occupation <span class="badge-req">Required</span></div>
+      <input type="text" placeholder="Your occupation" data-required="true" data-label="Badge Trust Network - Occupation">
+    </div>
+
+    <hr class="divider">
+
+    <div class="sub-section-title">FICO / Credit Score Range</div>
+
+    <div class="field">
+      <div class="field-label">FICO / Credit Score Range <span class="badge-req">Required</span></div>
+      <div style="margin-top:6px; display:flex; flex-wrap:wrap; gap:4px;">
+        <span class="score-range">300–499</span>
+        <span class="score-range">500–579</span>
+        <span class="score-range">580–669</span>
+        <span class="score-range">670–739</span>
+        <span class="score-range">740–799</span>
+        <span class="score-range">800–850</span>
+      </div>
+      <div class="sub-group" style="margin-top:10px;">
+        <div class="sub-row">
+          <span class="sub-label">Your Score</span>
+          <input type="number" placeholder="e.g. 720" min="300" max="850" data-required="true" data-label="FICO / Credit Score Range - Your Score">
+        </div>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="field-label">Applicant Full Name</div>
+      <input type="text" placeholder="Last then First, or First Last">
+    </div>
+
+
+
+    <hr class="divider">
+
+    <div class="highlight-box">
+      "Participation in the <strong>Badge Trust Network</strong> indicates your willingness to have your application reviewed under our standard trust scoring model. Scores are assessed on a rolling 30-day basis and may affect your funding tier, rate, and term eligibility. Applicants with scores above <strong>670</strong> are generally eligible for preferred network status."
+    </div>
+
+    <div class="text-block">
+      By submitting this application you authorize 365 Funding to obtain a consumer credit report, verify employment and income, and share your application data with partner institutions within the Badge Trust Network for evaluation purposes.
+    </div>
+  </div>
+
+  <!-- SUBMIT -->
+  <button id="submitBtn" type="button" class="btn-submit">Submit Application</button>
+  <p class="small-note">Your information is encrypted and transmitted securely.<br>We will contact you within 2–3 business days.</p>
+
+</div>
+
+<!-- Thank You Modal -->
+<div id="thankYouModal" class="modal" style="display:none;" role="dialog" aria-modal="true" aria-labelledby="thankYouTitle" aria-describedby="thankYouDescription">
+  <div class="modal-content">
+    <h2 id="thankYouTitle">Application Submitted</h2>
+    <p id="thankYouDescription">Thank you for submitting your information! At this moment we are going to be review your application, we will reach out to you once completed.</p>
+    <button id="closeBtn" type="button" class="btn-close">Close</button>
+  </div>
+</div>
+
+<!-- Error Modal -->
+<div id="errorModal" class="modal" style="display:none;" role="dialog" aria-modal="true" aria-labelledby="errorTitle" aria-describedby="errorDescription">
+  <div class="modal-content error-modal">
+    <h2 id="errorTitle">Application Incomplete</h2>
+    <p id="errorDescription" class="error-message">We could not complete your application because one or more fields are not completed. Please try again.</p>
+    <div id="missingFields" class="missing-fields">
+      <!-- List of missing fields will be populated here -->
+    </div>
+    <button id="closeErrorBtn" type="button" class="btn-close">Close</button>
+  </div>
+</div>
+
+<style>
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+
+  .modal-content {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .modal-content h2 {
+    margin-top: 0;
+    color: #333;
+  }
+
+  .modal-content p {
+    color: #666;
+    line-height: 1.6;
+    margin: 20px 0;
+  }
+
+  .btn-close {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .btn-close:hover {
+    background-color: #45a049;
+  }
+
+  .error-modal {
+    border: 2px solid #ff4444;
+  }
+
+  .error-modal h2 {
+    color: #ff4444;
+  }
+
+  .error-message {
+    color: #d9534f;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  .missing-fields {
+    background-color: #fff5f5;
+    padding: 12px;
+    border-radius: 4px;
+    margin: 15px 0;
+    text-align: left;
+  }
+
+  .small-input {
+    max-width: 280px;
+    width: 100%;
+  }
+
+  .missing-fields ul {
+    margin: 0;
+    padding-left: 20px;
+    color: #d9534f;
+  }
+
+  .missing-fields li {
+    margin: 5px 0;
+  }
+</style>
+
+<script>
+  function validateForm() {
+    const requiredFields = document.querySelectorAll('[data-required="true"]');
+    const missingFields = [];
+
+    requiredFields.forEach(function(field) {
+      const value = field.value.trim();
+      if (!value) {
+        const label = field.getAttribute('data-label') || 'Unknown field';
+        missingFields.push(label);
+        return;
+      }
+
+      if (field.dataset.phone === 'true') {
+        const digits = value.replace(/[^0-9]/g, '');
+        if (digits.length !== 10) {
+          missingFields.push('Phone number must be exactly 10 digits');
+        }
+      }
+
+      if (field.dataset.ssn === 'true') {
+        const digits = value.replace(/[^0-9]/g, '');
+        if (digits.length !== 9) {
+          missingFields.push('SS # must be exactly 9 digits');
+        }
+      }
+
+      if (field.dataset.zip === 'true') {
+        const digits = value.replace(/[^0-9]/g, '');
+        if (digits.length !== 5) {
+          missingFields.push('Zip Code must be exactly 5 digits');
+        }
+      }
+    });
+
+    return missingFields;
+  }
+
+  document.getElementById('submitBtn').addEventListener('click', function() {
+    const missingFields = validateForm();
+
+    if (missingFields.length > 0) {
+      // Show error modal with missing fields
+      const missingFieldsList = document.getElementById('missingFields');
+      let html = '<ul>';
+      missingFields.forEach(function(field) {
+        html += '<li>' + field + '</li>';
+      });
+      html += '</ul>';
+      missingFieldsList.innerHTML = html;
+
+      document.getElementById('errorModal').style.display = 'flex';
+    } else {
+      // All fields are filled, show thank you modal
+      document.getElementById('thankYouModal').style.display = 'flex';
+    }
+  });
+
+  document.getElementById('closeBtn').addEventListener('click', function() {
+    document.getElementById('thankYouModal').style.display = 'none';
+  });
+
+  document.getElementById('closeErrorBtn').addEventListener('click', function() {
+    document.getElementById('errorModal').style.display = 'none';
+  });
+
+  document.querySelectorAll('[data-type="numeric"]').forEach(function(field) {
+    field.addEventListener('input', function() {
+      const digitsOnly = this.value.replace(/[^0-9]/g, '');
+      if (field.dataset.phone === 'true') {
+        this.value = digitsOnly.slice(0, 10);
+      } else {
+        this.value = digitsOnly;
+      }
+    });
+  });
+
+  document.getElementById('thankYouModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+      this.style.display = 'none';
+    }
+  });
+
+  document.getElementById('errorModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+      this.style.display = 'none';
+    }
+  });
+</script>
+</body>
+</html>
