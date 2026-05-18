@@ -14,7 +14,7 @@
 
   body {
     font-family: 'DM Sans', sans-serif;
-    background: var(--bg);
+    background: #000000;
     color: var(--dark);
     font-size: 13px;
     line-height: 1.5;
